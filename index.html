@@ -126,6 +126,10 @@
             contain: layout paint;
         }
 
+        .block-content p:last-of-type {
+            margin-bottom: 0;
+        }
+
 
         .block.visible {
             opacity: 1;
@@ -393,11 +397,11 @@
 /* Medium mobile (larger phones) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     p {
@@ -407,12 +411,20 @@
     .bottom {
         font-size: 0.45rem;
     }
+
+    .hero-container {
+        max-width: 100%;
+    }
+
+    .heading-wrapper .heading-bg { 
+        width: 50%;
+    }
 }
 
 /* Tablet portrait */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1 {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
     h2 {
@@ -426,12 +438,20 @@
     .bottom {
         font-size: 0.5rem;
     }
+
+    .hero-container {
+        max-width: 90%;
+    }
+
+    .heading-wrapper .heading-bg { 
+        width: 60%;
+    }
 }
 
 /* Tablet landscape / small laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.7rem;
     }
 
     h2 {
@@ -444,6 +464,14 @@
 
     .bottom {
         font-size: 0.6rem;
+    }
+
+    .hero-container {
+        max-width: 90%;
+    }
+
+    .heading-wrapper .heading-bg { 
+        width: 60%;
     }
 }
 
@@ -466,7 +494,11 @@
     }
 
     .hero-container {
-        width: 90%;
+        max-width: 80%;
+    }
+
+    .heading-wrapper .heading-bg { 
+        width: 60%;
     }
 
 }
@@ -514,8 +546,8 @@
                     <h2>who is it for?</h2>
                 </div>
                 <p>If you’ve ever asked yourself:</p>
-                <p><span class="bold">“What music should I make for sync?”</span></p>
-                <p>or</p>
+                <p style="margin-bottom: 0px;"><span class="bold">“What music should I make for sync?”</span></p>
+                <p style="margin-bottom: 0px;">or</p>
                 <p><span class="bold">“How do I make my music more sync'able?”</span></p>
                 <p>Sync Beast Sessions answer those exact questions by showing you how it’s actually done.</p>
                 <p>You’ll see the creative decisions, the structure, and what makes each track right for sync.</p>
